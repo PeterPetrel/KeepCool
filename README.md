@@ -1,4 +1,4 @@
 KeepCool
 ========
 
-Little client-server based "Mensch aergere dich ncht" implementation in Java
+Little client-server based "Mensch aergere dich nicht" implementation in Java
