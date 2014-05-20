@@ -10,6 +10,12 @@ import de.fernuni.keepCool.client.elements.Dot;
  * 
  */
 public class MoveNotPossibleException extends Exception {
+	/**
+	 * ID
+	 */
+	private static final long serialVersionUID = -3720545394101516719L;
+	
+
 
 	public MoveNotPossibleException(Dot from, Dot to) {
 		System.out.println("Move was not possible:");
@@ -24,10 +30,5 @@ public class MoveNotPossibleException extends Exception {
 				+ ((from.getToken() == null) ? "nothing" : from.getToken()
 						.toString()));
 	}
-
-	/**
-	 * ID
-	 */
-	private static final long serialVersionUID = -5516150042465586982L;
 
 }

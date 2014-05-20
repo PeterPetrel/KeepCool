@@ -4,6 +4,11 @@ import java.util.Vector;
 
 import de.fernuni.keepCool.client.exceptions.NoPossibleMoveException;
 
+/**
+ * @author $M
+ *
+ *erstellt neue Bretter und enthält die Logik regelkonforme züge vorzuschlagen
+ */
 public interface Rules {
 
 	/**

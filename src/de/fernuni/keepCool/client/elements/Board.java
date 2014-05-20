@@ -14,7 +14,6 @@ import de.fernuni.keepCool.client.ui.FieldUI;
  */
 public class Board {
 
-	Dice dice = new Dice();
 	Vector<Dot> dots;
 	Vector<Token> inGameTokens;// die Spielsteine im Spiel
 	Vector<Token> outGameTokens;// ... die Steine im Aus
@@ -22,7 +21,6 @@ public class Board {
 									// wichtig!)
 									// TODO: Muss geändert werden,
 									// damit man darin setzen kann.
-
 	GameMode mode;
 	FieldUI fieldUI;
 
