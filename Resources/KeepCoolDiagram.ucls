@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class-diagram version="1.1.6" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
-  realizations="true" associations="true" dependencies="false" nesting-relationships="true">  
+<class-diagram version="1.1.5" icons="true" automaticImage="JPEG" always-add-relationships="false" 
+  generalizations="true" realizations="true" associations="true" dependencies="false" nesting-relationships="true">  
   <class id="1" language="java" name="de.fernuni.keepCool.client.elements.Dice" project="KeepCool" 
     file="/KeepCool/src/de/fernuni/keepCool/client/elements/Dice.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="160" x="364" y="194"/>    
+    <position height="156" width="236" x="877" y="369"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </class>  
   <enumeration id="2" language="java" name="de.fernuni.keepCool.client.elements.Color" project="KeepCool" 
     file="/KeepCool/src/de/fernuni/keepCool/client/elements/Color.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="171" width="160" x="789" y="773"/>    
+    <position height="196" width="236" x="1335" y="997"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -21,7 +21,7 @@
   </enumeration>  
   <enumeration id="3" language="java" name="de.fernuni.keepCool.client.elements.GameMode" project="KeepCool" 
     file="/KeepCool/src/de/fernuni/keepCool/client/elements/GameMode.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="189" width="160" x="183" y="387"/>    
+    <position height="216" width="236" x="41" y="565"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -30,7 +30,7 @@
   </enumeration>  
   <class id="4" language="java" name="de.fernuni.keepCool.client.elements.Dot" project="KeepCool" 
     file="/KeepCool/src/de/fernuni/keepCool/client/elements/Dot.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="117" width="160" x="383" y="387"/>    
+    <position height="136" width="236" x="317" y="565"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -39,7 +39,7 @@
   </class>  
   <interface id="5" language="java" name="de.fernuni.keepCool.client.elements.Rules" project="KeepCool" 
     file="/KeepCool/src/de/fernuni/keepCool/client/elements/Rules.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="283" x="41" y="194"/>    
+    <position height="116" width="397" x="1153" y="369"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -48,7 +48,7 @@
   </interface>  
   <class id="6" language="java" name="de.fernuni.keepCool.client.elements.Game" project="KeepCool" 
     file="/KeepCool/src/de/fernuni/keepCool/client/elements/Game.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="117" width="166" x="564" y="37"/>    
+    <position height="136" width="236" x="1153" y="193"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -57,7 +57,7 @@
   </class>  
   <class id="7" language="java" name="de.fernuni.keepCool.client.elements.Player" project="KeepCool" 
     file="/KeepCool/src/de/fernuni/keepCool/client/elements/Player.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="160" x="789" y="194"/>    
+    <position height="116" width="236" x="1335" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -66,7 +66,7 @@
   </class>  
   <class id="8" language="java" name="de.fernuni.keepCool.client.elements.Token" project="KeepCool" 
     file="/KeepCool/src/de/fernuni/keepCool/client/elements/Token.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="117" width="160" x="585" y="616"/>    
+    <position height="136" width="236" x="595" y="821"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -75,7 +75,7 @@
   </class>  
   <class id="9" language="java" name="de.fernuni.keepCool.client.elements.Board" project="KeepCool" 
     file="/KeepCool/src/de/fernuni/keepCool/client/elements/Board.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="185" x="571" y="238"/>    
+    <position height="156" width="263" x="574" y="369"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -83,109 +83,114 @@
     </display>  
   </class>  
   <association id="10">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="11" name="token"/>      
+    <bendpoint x="1580" y="193"/>    
+    <bendpoint x="1580" y="369"/>    
+    <bendpoint x="1580" y="565"/>    
+    <bendpoint x="1580" y="821"/>    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="11" name="color"/>      
       <multiplicity id="12" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
+    <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="13">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="14" name="board"/>      
-      <multiplicity id="15" minimum="0" maximum="1"/>    
+    <bendpoint x="583" y="565"/>    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="14" name="outGameTokens"/>      
+      <multiplicity id="15" minimum="0" maximum="2147483647"/>    
     </end>    
-    <end type="TARGET" refId="9" navigable="true"/>    
+    <end type="TARGET" refId="8" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="16">    
     <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="17" name="dice"/>      
+      <attribute id="17" name="rules"/>      
       <multiplicity id="18" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
+    <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="19">    
-    <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="20" name="outGameTokens"/>      
-      <multiplicity id="21" minimum="0" maximum="2147483647"/>    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="20" name="board"/>      
+      <multiplicity id="21" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
+    <end type="TARGET" refId="9" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="22">    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="23" name="game"/>      
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="23" name="mode"/>      
       <multiplicity id="24" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="25">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="26" name="players"/>      
-      <multiplicity id="27" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="7" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="28">    
-    <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="29" name="finishGameToken"/>      
-      <multiplicity id="30" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="31">    
-    <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="32" name="color"/>      
-      <multiplicity id="33" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="34">    
-    <bendpoint x="798" y="387"/>    
-    <bendpoint x="798" y="616"/>    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="35" name="color"/>      
-      <multiplicity id="36" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="37">    
-    <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="38" name="inGameTokens"/>      
-      <multiplicity id="39" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="40">    
-    <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="41" name="mode"/>      
-      <multiplicity id="42" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="43">    
+  <association id="25">    
+    <bendpoint x="625" y="565"/>    
     <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="44" name="dots"/>      
-      <multiplicity id="45" minimum="0" maximum="2147483647"/>    
+      <attribute id="26" name="inGameTokens"/>      
+      <multiplicity id="27" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="28">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="29" name="dice"/>      
+      <multiplicity id="30" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="31">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="32" name="game"/>      
+      <multiplicity id="33" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="34">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="35" name="token"/>      
+      <multiplicity id="36" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="37">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="38" name="dots"/>      
+      <multiplicity id="39" minimum="0" maximum="2147483647"/>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <association id="40">    
+    <bendpoint x="604" y="565"/>    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="41" name="finishGameToken"/>      
+      <multiplicity id="42" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="43">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="44" name="color"/>      
+      <multiplicity id="45" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
   <association id="46">    
     <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="47" name="rules"/>      
-      <multiplicity id="48" minimum="0" maximum="1"/>    
+      <attribute id="47" name="players"/>      
+      <multiplicity id="48" minimum="0" maximum="2147483647"/>    
     </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
+    <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
