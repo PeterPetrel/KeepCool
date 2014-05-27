@@ -3,7 +3,7 @@ package de.fernuni.keepCool.client.elements;
 /**
  * @author fernuni
  * 
- *         Klasse repräsentiert ein "normales" Feld auf dem Spielbrett. Kann
+ *         Klasse reprasentiert ein "normales" Feld auf dem Spielbrett. Kann
  *         einen Token aufnehmen.
  */
 public class Dot {
@@ -15,7 +15,17 @@ public class Dot {
 	}
 
 	void setToken(Token token) {
-		this.token = token;
+		if (this.token == null) {
+			this.token = token;
+		}
+		else {
+			if (this.token.color != token.color) {
+				// setze vorhandenes Token auf Start
+			}
+			else {
+				// Move not possible exception
+			}
+		}
 	}
 
 }
