@@ -1,5 +1,7 @@
 package de.fernuni.keepCool.client.elements;
 
+import de.fernuni.keepCool.client.exceptions.MoveNotPossibleException;
+
 /**
  * @author fernuni
  * 
@@ -14,17 +16,12 @@ public class Dot {
 		return token;
 	}
 
-	void setToken(Token token) {
+	void setToken(Token token) throws MoveNotPossibleException {
 		if (this.token == null) {
 			this.token = token;
-		}
-		else {
-			if (this.token.color != token.color) {
-				// setze vorhandenes Token auf Start
-			}
-			else {
-				// Move not possible exception
-			}
+		} else {
+			// Fall dass bereits Token vorhanden sollte schon abgefangen sein
+			throw new MoveNotPossibleException(token.dot, this);
 		}
 	}
 

@@ -11,6 +11,7 @@ public class Token {
 
 	Color color;
 	TokenUI tokenUI;
+	Dot dot;
 
 	private Token() {
 	}
