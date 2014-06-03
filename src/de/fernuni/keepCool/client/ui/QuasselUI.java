@@ -37,7 +37,6 @@ public class QuasselUI extends JFrame{
 		getContentPane().add(pnlLeft, BorderLayout.WEST);
 		getContentPane().add(pnlRight, BorderLayout.EAST);
 		getContentPane().add(pnlBottom, BorderLayout.SOUTH);
-		// getContentPane().add(table, BorderLayout.CENTER);
 		getContentPane().add(pnlCenter, BorderLayout.CENTER);
 		
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -55,20 +54,23 @@ public class QuasselUI extends JFrame{
 		pnlBottom.add(btnSecond);
 		pnlBottom.add(btnThird);
 		
+		// player buttons
 		pnlLeft.add(btnPlayer1);
 		pnlLeft.add(btnPlayer2);
 		pnlLeft.add(btnPlayer3);
 		pnlLeft.add(btnPlayer4);
 		
+		// add board components divided in top, middle & bottom
 		pnlCenter.add(boxCenterTop);
 		pnlCenter.add(boxCenter);
 		pnlCenter.add(boxCenterBottom);
 		
+		// middle of board
 		boxCenter.add(pnlCenterMiddle);
-		
 		addFieldElems(pnlCenterMiddle, btnsCenterMiddle);
 		btnsCenterMiddle[1][5].setVisible(false);
 		
+		// top of board & startbox 1, 2
 		boxCenterTop.add(pnlStart1);
 		boxCenterTop.add(Box.createHorizontalGlue());
 		boxCenterTop.add(pnlTopMiddle);
@@ -79,6 +81,7 @@ public class QuasselUI extends JFrame{
 		addFieldElems(pnlTopMiddle, btnsTopMiddle);
 		addFieldElems(pnlStart2, btnsStart2);
 		
+		// bottom of board & startbox 3,4
 		boxCenterBottom.add(pnlStart3);
 		boxCenterBottom.add(Box.createHorizontalGlue());
 		boxCenterBottom.add(pnlBottomMiddle);
@@ -89,6 +92,7 @@ public class QuasselUI extends JFrame{
 		addFieldElems(pnlBottomMiddle, btnsBottomMiddle);
 		addFieldElems(pnlStart4, btnsStart4);
 		
+		// max size
 		pnlStart1.setMaximumSize(pnlStart1.getPreferredSize());
 		pnlStart2.setMaximumSize(pnlStart2.getPreferredSize());
 		pnlStart3.setMaximumSize(pnlStart3.getPreferredSize());
@@ -111,12 +115,15 @@ public class QuasselUI extends JFrame{
 		pnlRight.setLayout(new BoxLayout(pnlRight, BoxLayout.Y_AXIS));
 		pnlBottom = new JPanel(new FlowLayout());
 		
+		
+		// center - field of game
 		pnlCenter = new JPanel();
 		pnlCenter.setLayout(new BoxLayout(pnlCenter, BoxLayout.Y_AXIS));
 		boxCenter = Box.createHorizontalBox();
 		boxCenterTop = Box.createHorizontalBox();
 		boxCenterBottom = Box.createHorizontalBox();
 		
+		// dots & start boxes
 		pnlCenterMiddle = new JPanel(new GridLayout(3, 11));
 		pnlTopMiddle = new JPanel(new GridLayout(4,3));
 		pnlBottomMiddle = new JPanel(new GridLayout(4,3));
@@ -132,9 +139,6 @@ public class QuasselUI extends JFrame{
 		btnsStart2 = fillField(2, 2, 50, 50);
 		btnsStart3 = fillField(2, 2, 50, 50);
 		btnsStart4 = fillField(2, 2, 50, 50);
-		
-		// game - center table
-		// table = new JTable(10, 10);
 		
 		// buttons
 		btnFirst = new JButton("Erster Button");
