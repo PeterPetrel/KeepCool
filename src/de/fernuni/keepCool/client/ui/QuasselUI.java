@@ -71,6 +71,7 @@ public class QuasselUI extends JFrame{
 		btnsCenterMiddle[1][5].setVisible(false);
 		
 		// top of board & startbox 1, 2
+		
 		boxCenterTop.add(pnlStart1);
 		boxCenterTop.add(Box.createHorizontalGlue());
 		boxCenterTop.add(pnlTopMiddle);
@@ -82,6 +83,7 @@ public class QuasselUI extends JFrame{
 		addFieldElems(pnlStart2, btnsStart2);
 		
 		// bottom of board & startbox 3,4
+		
 		boxCenterBottom.add(pnlStart3);
 		boxCenterBottom.add(Box.createHorizontalGlue());
 		boxCenterBottom.add(pnlBottomMiddle);
