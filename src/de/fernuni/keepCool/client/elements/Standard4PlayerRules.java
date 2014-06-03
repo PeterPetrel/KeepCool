@@ -53,6 +53,7 @@ public class Standard4PlayerRules implements Rules {
 					try {
 						@SuppressWarnings("unused")
 						int num = Integer.parseInt(aktDot);
+						ui.modifyButton(x, y, aktDot);
 					} catch (NumberFormatException e) {
 						// sollte nicht mehr auftreten
 						e.printStackTrace();
