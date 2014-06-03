@@ -9,14 +9,14 @@ import de.fernuni.keepCool.client.ui.TokenUI;
  */
 public class Token {
 
-	Color color;
+	KeepCoolColor color;
 	TokenUI tokenUI;
 	Dot dot;
 
 	private Token() {
 	}
 
-	Token(Color color) {
+	Token(KeepCoolColor color) {
 		this();
 		this.color = color;
 	}

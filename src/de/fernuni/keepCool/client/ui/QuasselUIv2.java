@@ -1,8 +1,19 @@
 package de.fernuni.keepCool.client.ui;
 
-import java.awt.*;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
 
-import javax.swing.*;
+import javax.swing.BoxLayout;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 public class QuasselUIv2 extends JFrame {
 
@@ -11,10 +22,43 @@ public class QuasselUIv2 extends JFrame {
 	private JMenu mnuGame;
 	private JMenuItem mnuGameExit;
 
-	private JPanel pnlLeft, pnlRight, pnlBottom,pnlCenterMiddle;
+	private JPanel pnlLeft, pnlRight, pnlBottom, pnlCenterMiddle;
 
 	// private JTable table;
-	private JButton[][] btns;
+	private KeepCoolDot[][] btns;
+
+	public KeepCoolDot[][] getBtns() {
+		return btns;
+	}
+
+	public void setBtns(KeepCoolDot[][] btns) {
+		this.btns = btns;
+	}
+
+	public void modifyButton(int x, int y, String mod) {
+		switch (mod) {
+		case "  ":
+			btns[x][y].setVisible(false);
+			break;
+		case "empty":
+			btns[x][y].setBackground(Color.WHITE);
+			break;
+		default:
+			if (mod.startsWith("0x")) {
+				btns[x][y].setBackground(Color.decode(mod));
+			} else {
+				// hier bleiben nur noch die Felder mit Zahlen übrig (sollten!!)
+				try {
+					int num = Integer.parseInt(mod);
+					btns[x][y].setNumber(num);
+				} catch (NumberFormatException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+			break;
+		}
+	}
 
 	private JButton btnFirst, btnSecond, btnThird, btnPlayer1, btnPlayer2,
 			btnPlayer3, btnPlayer4;
@@ -56,7 +100,7 @@ public class QuasselUIv2 extends JFrame {
 		pnlLeft.add(btnPlayer4);
 
 		// middle of board
-		
+
 		addFieldElems(pnlCenterMiddle, btns);
 
 		// max size
@@ -75,12 +119,12 @@ public class QuasselUIv2 extends JFrame {
 		pnlRight = new JPanel();
 		pnlRight.setLayout(new BoxLayout(pnlRight, BoxLayout.Y_AXIS));
 		pnlBottom = new JPanel(new FlowLayout());
-		
+
 		// dots & start boxes
 		pnlCenterMiddle = new JPanel(new GridLayout(11, 11));
 
 		btns = fillField(11, 11, 50, 50);
-		
+
 		// buttons
 		btnFirst = new JButton("Erster Button");
 		btnSecond = new JButton("Zweiter Button");
@@ -93,11 +137,11 @@ public class QuasselUIv2 extends JFrame {
 
 	}
 
-	public JButton[][] fillField(int row, int col, int width, int height) {
-		JButton[][] elems = new JButton[row][col];
+	public KeepCoolDot[][] fillField(int row, int col, int width, int height) {
+		KeepCoolDot[][] elems = new KeepCoolDot[row][col];
 		for (int i = 0; i < elems.length; i++) {
 			for (int j = 0; j < elems[i].length; j++) {
-				elems[i][j] = new JButton("x");
+				elems[i][j] = new KeepCoolDot("x");
 				// matrix[i][j].setMinimumSize(new Dimension(minWidth,
 				// minHeight));
 				elems[i][j].setPreferredSize(new Dimension(width, height));
