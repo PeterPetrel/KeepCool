@@ -5,18 +5,19 @@ import de.fernuni.keepCool.client.ui.DiceUI;
 /**
  * @author fernuni
  * 
- *         Klasse repräsentiert den Spielwürfel. hat einen Wert, der per Zufall
+ *         Klasse reprï¿½sentiert den Spielwï¿½rfel. hat einen Wert, der per Zufall
  *         generiert wird zwischen 1 und 6
  */
 public class Dice {
-	double value;
+	int value;
 	DiceUI diceUI;
 
 	Dice() {
 		throwDice();
 	}
 
-	double throwDice() {
-		return value = Math.random() % 6 + 1;
+	int throwDice() {
+		return value = (int)(Math.random() * 6 + 1);
+
 	}
 }

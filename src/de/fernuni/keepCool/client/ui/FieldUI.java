@@ -5,7 +5,7 @@ import javax.swing.JComponent;
 /**
  * @author fernuni
  * 
- *         Platzhalter f¸r die sp‰tere GUI Klasse die den Dice repr‰sentiert
+ *         Platzhalter f√ºr die sp√§tere GUI Klasse die den Dice repr√§sentiert
  */
 public class FieldUI extends JComponent {
 
