@@ -1,11 +1,11 @@
-package de.fernuni.keepCool.client.elements;
+﻿package de.fernuni.keepCool.client.elements;
 
 import de.fernuni.keepCool.client.exceptions.MoveNotPossibleException;
 
 /**
  * @author fernuni
  * 
- *         Klasse reprasentiert ein "normales" Feld auf dem Spielbrett. Kann
+ *         Klasse repräsentiert ein "normales" Feld auf dem Spielbrett. Kann
  *         einen Token aufnehmen.
  */
 public class Dot {

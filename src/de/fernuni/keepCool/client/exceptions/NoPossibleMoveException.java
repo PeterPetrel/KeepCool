@@ -1,9 +1,9 @@
-package de.fernuni.keepCool.client.exceptions;
+ï»¿package de.fernuni.keepCool.client.exceptions;
 
 /**
  * @author fernuni
  * 
- *         Falls ein Spieler keine möglichen Züge hat, wird diese geworfen
+ *         Falls ein Spieler keine mÃ¶glichen ZÃ¼ge hat, wird diese geworfen
  * 
  */
 public class NoPossibleMoveException extends Exception {

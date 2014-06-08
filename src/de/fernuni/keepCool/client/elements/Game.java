@@ -1,13 +1,13 @@
-package de.fernuni.keepCool.client.elements;
+ï»¿package de.fernuni.keepCool.client.elements;
 
 import java.util.Vector;
 
 /**
  * @author fernuni
  * 
- *         Zentrale Klasse für ein Spiel. Hier sind die Spieler, das Spielbrett
+ *         Zentrale Klasse fÃ¼r ein Spiel. Hier sind die Spieler, das Spielbrett
  *         und die Spiellogik vereint. Diese Klasse vermittelt also zwischen
- *         diesen. Ebenfalls läuft hier der Spielablauf ab.
+ *         diesen. Ebenfalls lÃ¤uft hier der Spielablauf ab.
  * 
  */
 public class Game {
@@ -26,7 +26,7 @@ public class Game {
 		this.rules = rules;
 		this.players = players;
 		this.board = rules.createBoard();
-		// TODO prüfen, ob farben eindeutig dem Brett zugeordnet werden kann
+		// TODO prÃ¼fen, ob farben eindeutig dem Brett zugeordnet werden kann
 	}
 
 	public void performMove(Dot d, int number) {

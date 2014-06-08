@@ -1,4 +1,4 @@
-package de.fernuni.keepCool.client.elements;
+﻿package de.fernuni.keepCool.client.elements;
 
 import java.util.Vector;
 
@@ -13,23 +13,23 @@ import de.fernuni.keepCool.client.exceptions.NoPossibleMoveException;
 public interface Rules {
 
 	/**
-	 * Filtert die eingegebene Liste mit m�glichen Z�gen durch regul�re Z�ge
+	 * Filtert die eingegebene Liste mit möglichen Zügen durch reguläre Züge
 	 * 
 	 * @param possibleMoves
-	 *            Liste mit technisch m�glichen Z�gen
+	 *            Liste mit technisch möglichen Zügen
 	 * @param steps
 	 *            geworfene Zahl
-	 * @return Liste mit Z�gen, um sie im UI anzuzeigen und dem Spieler diese
+	 * @return Liste mit Zügen, um sie im UI anzuzeigen und dem Spieler diese
 	 *         zur Wahl zu geben
 	 * @throws NoPossibleMoveException
-	 *             falls kein Zug m�glich ist, Game muss darauf reagieren und
-	 *             den n�chsten Spieler drannehmen
+	 *             falls kein Zug möglich ist, Game muss darauf reagieren und
+	 *             den nächsten Spieler drannehmen
 	 */
 	public Vector<Dot> calculateRegularMoves(Vector<Dot> possibleMoves,
 			int steps) throws NoPossibleMoveException;
 
 	/**
-	 * Erstellt und initialisiert ein Spielbrett nach den g�ltigen Regeln, die
+	 * Erstellt und initialisiert ein Spielbrett nach den gültigen Regeln, die
 	 * hierdurch definiert werden
 	 * 
 	 * @return Spielbrett mit Figuren.

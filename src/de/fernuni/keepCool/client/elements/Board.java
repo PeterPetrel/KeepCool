@@ -1,4 +1,4 @@
-package de.fernuni.keepCool.client.elements;
+ï»¿package de.fernuni.keepCool.client.elements;
 
 import java.util.Vector;
 
@@ -8,9 +8,9 @@ import de.fernuni.keepCool.client.ui.FieldUI;
 /**
  * @author fernuni
  * 
- *         Repräsentiert ein Spielbrett. Alle Elemente des Spiels sind in dieser
+ *         ReprÃ¤sentiert ein Spielbrett. Alle Elemente des Spiels sind in dieser
  *         Klasse gesammelt. DIese Klasse wird von "Game" genutzt. Alle Logik
- *         liegt dort. Hier wird nur ausgeführt.
+ *         liegt dort. Hier wird nur ausgefÃ¼hrt.
  */
 public class Board {
 
@@ -19,14 +19,14 @@ public class Board {
 	Vector<Token> outGameTokens;// ... die Steine im Aus
 	Vector<Token> finishGameToken; // ... und die schon fertig sind (Position
 									// wichtig!)
-									// TODO: Muss geändert werden,
+									// TODO: Muss geÃ¤ndert werden,
 									// damit man darin setzen kann.
 	GameMode mode;
 	FieldUI fieldUI;
 
 	Board(GameMode mode, Vector tokens, FieldUI fieldUI) {
 		// Spiel wird frisch gestartet, alles was drauf ist, wird von den Rules
-		// erstellt, die am Game hängen und dem Game übergeben.
+		// erstellt, die am Game hÃ¤ngen und dem Game Ã¼bergeben.
 		this.mode = mode;
 		// alle Steine werden ins Aus gestellt zum Start
 		this.outGameTokens = tokens;
@@ -46,7 +46,7 @@ public class Board {
 		Token actor = from.getToken();
 		from.setToken(null);
 		if (to.getToken() != null) {
-			// wir müssten zunächst schlagen, der Zug ist so nicht möglich
+			// wir mÃ¼ssten zunÃ¤chst schlagen, der Zug ist so nicht mÃ¶glich
 			throw new MoveNotPossibleException(from, to);
 		}
 		to.setToken(actor);

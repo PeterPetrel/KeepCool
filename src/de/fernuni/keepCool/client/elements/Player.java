@@ -1,4 +1,4 @@
-package de.fernuni.keepCool.client.elements;
+﻿package de.fernuni.keepCool.client.elements;
 
 public abstract class Player {
 
@@ -7,8 +7,8 @@ public abstract class Player {
 
 	/**
 	 * Bitte das Spiel, an dem der Spieler teilnimmt, den Stein t die Anzahl
-	 * number Stellen weiterzusetzen. Das Spiel gibt exc. zur�ck falls nicht
-	 * m�glich
+	 * number Stellen weiterzusetzen. Das Spiel gibt exc. zurück falls nicht
+	 * möglich
 	 * 
 	 * @param d
 	 *            = Feld von dem gesetzt werden soll
@@ -16,8 +16,8 @@ public abstract class Player {
 	 *            = Anzahl der Schritte
 	 */
 	protected void moveToken(Dot d, int number) {
-		// delegiert an die Klasse game weiter, diese pr�ft und setzt ggf. oder
-		// wirft exception zur�ck
+		// delegiert an die Klasse game weiter, diese prüft und setzt ggf. oder
+		// wirft exception zurück
 		game.performMove(d, number);
 	}
 }

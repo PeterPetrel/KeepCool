@@ -5,7 +5,7 @@ import javax.swing.JComponent;
 /**
  * @author fernuni
  * 
- *         Platzhalter f¸r die sp‰tere GUI Klasse die das Token repr‰sentiert
+ *         Platzhalter f√ºr die sp√§tere GUI Klasse die das Token repr√§sentiert
  */
 public class TokenUI extends JComponent {
 

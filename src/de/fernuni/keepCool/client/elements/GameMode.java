@@ -1,4 +1,4 @@
-package de.fernuni.keepCool.client.elements;
+﻿package de.fernuni.keepCool.client.elements;
 
 /**
  * @author fernuni Definiert GrundParameter des Spiels, Anzahl der Spieler,

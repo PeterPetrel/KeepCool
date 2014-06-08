@@ -5,8 +5,8 @@ import de.fernuni.keepCool.client.elements.Dot;
 /**
  * @author fernuni
  * 
- *         tritt bei der Ausführung eines Zuges auf, wenn Zug nicht möglich ist.
- *         Das spricht für einen Fehler in der Logik
+ *         tritt bei der AusfÃ¼hrung eines Zuges auf, wenn Zug nicht mÃ¶glich
+ *         ist. Das spricht fÃ¼r einen Fehler in der Logik
  * 
  */
 public class MoveNotPossibleException extends Exception {
@@ -14,8 +14,6 @@ public class MoveNotPossibleException extends Exception {
 	 * ID
 	 */
 	private static final long serialVersionUID = -3720545394101516719L;
-	
-
 
 	public MoveNotPossibleException(Dot from, Dot to) {
 		System.out.println("Move was not possible:");
