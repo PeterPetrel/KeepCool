@@ -1,6 +1,8 @@
 package de.fernuni.keepCool.client.elements;
 
 import java.awt.Button;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Vector;
 
 import de.fernuni.keepCool.client.exceptions.NoPossibleMoveException;
@@ -11,6 +13,9 @@ public class Standard4PlayerRules implements Rules {
 
 	String leveltext = Messages.getString("Standard4PlayerRules.FieldString"); //$NON-NLS-1$
 	Vector<KeepCoolColor> colors;
+	// Map, die als Key der Spielernummer (0,1,2,3) seine jeweilige
+	// Startposition zuordnet
+	Map<Integer, Integer> startPosition = new HashMap<Integer, Integer>();
 
 	@SuppressWarnings("unused")
 	private Standard4PlayerRules() {
@@ -51,8 +56,26 @@ public class Standard4PlayerRules implements Rules {
 				} else {
 					// hier nur noch nummerfelder
 					try {
+
 						@SuppressWarnings("unused")
+						// setze Startpositionen und färbe Felder ein
 						int num = Integer.parseInt(aktDot);
+						if (num == 0) {
+							ui.modifyButton(x, y, colors.get(1).value);
+							startPosition.put(1, 0);
+						}
+						if (num == 10) {
+							ui.modifyButton(x, y, colors.get(2).value);
+							startPosition.put(2, 10);
+						}
+						if (num == 20) {
+							ui.modifyButton(x, y, colors.get(3).value);
+							startPosition.put(3, 20);
+						}
+						if (num == 30) {
+							ui.modifyButton(x, y, colors.get(0).value);
+							startPosition.put(0, 30);
+						}
 						ui.modifyButton(x, y, aktDot);
 					} catch (NumberFormatException e) {
 						// sollte nicht mehr auftreten
