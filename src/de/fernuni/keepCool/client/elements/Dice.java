@@ -20,4 +20,7 @@ public class Dice {
 		return value = (int)(Math.random() * 6 + 1);
 
 	}
+	void killDice(){
+		//do nothing hehe
+	}
 }
